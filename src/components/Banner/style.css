@@ -1,0 +1,14 @@
+.banner {
+  background-color: rgb(43, 21, 21);
+  color: white;
+  padding-top: 1%;
+}
+
+p {
+  margin: 0;
+}
+
+.message {
+  font-size: 0.6;
+  padding-bottom: 2%;
+}
