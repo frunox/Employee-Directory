@@ -18,13 +18,13 @@ class EmployeeList extends Component {
     return (
       <div className="container">
         <div className="content">
-          <thead>
+          <thead className="tableHeader">
             <tr>
-              <th>Image</th>
-              <th>Name</th>
-              <th>Phone</th>
-              <th>email</th>
-              <th>DOB</th>
+              <th className="col1">Image</th>
+              <th className="col2">Name</th>
+              <th className="col3">Phone</th>
+              <th className="col4">email</th>
+              <th className="col5">DOB</th>
             </tr>
           </thead>
           {this.state.employees.results.map(employee =>

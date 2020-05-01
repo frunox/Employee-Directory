@@ -1,10 +1,10 @@
 import React from "react";
-// import "./style.css";
+import "./style.css";
 
 function EmployeeTable(props) {
     return (
         <div className="table">
-            <table className="content">
+            <table className="content" id="empTable">
                 {/* <thead>
                     <tr>
                         <th>Image</th>
@@ -14,13 +14,13 @@ function EmployeeTable(props) {
                         <th>DOB</th>
                     </tr>
                 </thead> */}
-                <tbody>
+                <tbody className="tableBody">
                     <tr>
-                        <td><img src={props.image} alt={props.firstName} /></td>
-                        <td>{props.firstName} {props.lastName}</td>
-                        <td>{props.phone}</td>
-                        <td>{props.email}</td>
-                        <td>{props.dob}</td>
+                        <td className="col1"><img src={props.image} alt={props.firstName} /></td>
+                        <td className="align-middle col2">{props.firstName} {props.lastName}</td>
+                        <td className="align-middle col3">{props.phone}</td>
+                        <td className="align-middle col4">{props.email}</td>
+                        <td className="align-middle col5">{props.dob}</td>
                     </tr>
                 </tbody>
 

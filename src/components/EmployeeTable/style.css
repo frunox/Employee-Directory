@@ -1,0 +1,54 @@
+#empTable {
+    text-align: center;
+    table-layout: fixed;
+    width: 100%;
+    max-width: 100%;
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.tableHeader {
+    text-align: center;
+    width: 100%;
+    
+}
+
+.tableHeader th {
+    padding-left: 0.6rem;
+    padding-right: 0.6rem
+}
+
+.table td {
+    padding: 1rem .6rem 0 .6rem;
+}
+
+.tableBody {
+    font-size: 0.75rem;
+}
+
+.col1 {
+    width: 60px;
+}
+
+.col2 {
+    width: 130px;
+}
+
+.col3 {
+    width: 120px;
+}
+
+.col4 {
+    width: 180px;
+    overflow: hidden;
+}
+
+.col5 {
+    width: 100px;
+    overflow: hidden;
+}
