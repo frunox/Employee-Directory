@@ -9,7 +9,7 @@ class SearchButton extends Component {
 
   render() {
     return (
-      <div class="inputLine">
+      <div className="inputLine">
         <input
           className="input"
           value={this.state.input}
