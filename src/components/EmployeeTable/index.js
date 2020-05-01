@@ -5,7 +5,7 @@ function EmployeeTable(props) {
     return (
         <div className="table">
             <table className="content">
-                <thead>
+                {/* <thead>
                     <tr>
                         <th>Image</th>
                         <th>Name</th>
@@ -13,7 +13,7 @@ function EmployeeTable(props) {
                         <th>email</th>
                         <th>DOB</th>
                     </tr>
-                </thead>
+                </thead> */}
                 <tbody>
                     <tr>
                         <td><img src={props.image} alt={props.firstName} /></td>

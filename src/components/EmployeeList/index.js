@@ -18,6 +18,15 @@ class EmployeeList extends Component {
     return (
       <div className="container">
         <div className="content">
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Name</th>
+              <th>Phone</th>
+              <th>email</th>
+              <th>DOB</th>
+            </tr>
+          </thead>
           {this.state.employees.results.map(employee =>
             // console.log(employee.cell);
             < EmployeeTable
