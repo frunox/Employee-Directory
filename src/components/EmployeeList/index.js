@@ -1,14 +1,6 @@
 import React, { Component } from "react";
 import EmployeeTable from "../EmployeeTable";
 import employees from "./employees.json";
-import "./style.css";
-// console.log(employees)
-console.log(employees.results[0].id.value)
-// console.log(employees.results[0].name.last)
-// console.log(employees.results[0].dob.date)
-// console.log(employees.results[0].email)
-// console.log(employees.results[0].cell)
-// console.log(employees.results[0].picture.thumbnail)
 class EmployeeList extends Component {
   state = {
     employees
@@ -16,31 +8,29 @@ class EmployeeList extends Component {
 
   render() {
     return (
-      <div className="container">
-        <div className="content">
-          <thead className="tableHeader">
-            <tr>
-              <th className="col1">Image</th>
-              <th className="col2">Name</th>
-              <th className="col3">Phone</th>
-              <th className="col4">email</th>
-              <th className="col5">DOB</th>
-            </tr>
-          </thead>
-          {this.state.employees.results.map(employee =>
-            // console.log(employee.cell);
-            < EmployeeTable
-              image={employee.picture.thumbnail}
-              firstName={employee.name.first}
-              lastName={employee.name.last}
-              phone={employee.cell}
-              email={employee.email}
-              dob={employee.dob.date}
-              id={employee.id.value}
-            />
-          )}
-        </div>
-      </div>
+      <table className="content">
+        <thead className="tableHeader">
+          <tr>
+            <th className="col1">Image</th>
+            <th className="col2">Name</th>
+            <th className="col3">Phone</th>
+            <th className="col4">email</th>
+            <th className="col5">DOB</th>
+          </tr>
+        </thead>
+        {this.state.employees.results.map(employee =>
+          // console.log(employee.cell);
+          < EmployeeTable
+            image={employee.picture.thumbnail}
+            firstName={employee.name.first}
+            lastName={employee.name.last}
+            phone={employee.cell}
+            email={employee.email}
+            dob={employee.dob.date}
+            id={employee.id.value}
+          />
+        )}
+      </table>
     )
 
   }

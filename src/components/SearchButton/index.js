@@ -9,9 +9,9 @@ class SearchButton extends Component {
 
   render() {
     return (
-      <div className="inputLine">
+      <div className="row align-items-center justify-content-center inputLine">
         <input
-          className="input"
+          className="col input"
           value={this.state.input}
           name="input"
           onChange={this.handleInputChange}

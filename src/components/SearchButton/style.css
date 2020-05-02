@@ -4,5 +4,6 @@
 }
 
 .input {
-  margin-left: 35%;
+  width: 50px;
+  max-width: 150px;
 }
