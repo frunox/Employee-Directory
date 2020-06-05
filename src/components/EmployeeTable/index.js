@@ -4,7 +4,7 @@ import "./EmployeeTable.css";
 
 function EmployeeTable({ headings, users, handleSort }) {
     return (
-        <div className="datatable mt-5">
+        <div className="datatable">
             <table
                 id="table"
                 className="table table-striped table-hover table-condensed"
