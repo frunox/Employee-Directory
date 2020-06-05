@@ -40,9 +40,11 @@ export default class TableBody extends Component {
                 }
                 // numerically
                 else if (heading === "name") {
-                    return a[heading].first.localeCompare(b[heading].first);
+                    return a[heading].last.localeCompare(b[heading].last);
+                } else if (heading === 'dob') {
+                    return a[heading].date.localeCompare(b[heading].date);
                 } else {
-                    return a[heading] - b[heading];
+                    return a[heading].localeCompare(b[heading]);
                 }
             } else {
                 // account for missing values
@@ -53,9 +55,11 @@ export default class TableBody extends Component {
                 }
                 // numerically
                 else if (heading === "name") {
-                    return b[heading].first.localeCompare(a[heading].first);
+                    return b[heading].last.localeCompare(a[heading].last);
+                } else if (heading === "dob") {
+                    return b[heading].date.localeCompare(a[heading].date);
                 } else {
-                    return b[heading] - a[heading];
+                    return b[heading].localeCompare(a[heading]);
                 }
             }
 

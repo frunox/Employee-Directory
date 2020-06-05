@@ -1,3 +1,13 @@
+/* .fixHeader {
+  overflow-y: auto;
+  height: 600px;
+}
+
+.fixHeader thead th {
+  position: sticky;
+  top: 0;
+} */
+
 .datatable .col {
   cursor: pointer;
 }
