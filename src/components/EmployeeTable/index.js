@@ -4,7 +4,7 @@ import "./EmployeeTable.css";
 
 function EmployeeTable({ headings, users, handleSort }) {
     return (
-        <div className="datatable">
+        <div className="datatable fixHeader">
             <table
                 id="table"
                 className="table table-striped table-hover table-condensed"
@@ -22,7 +22,7 @@ function EmployeeTable({ headings, users, handleSort }) {
                                     }}
                                 >
                                     {name}
-                                    <span className="pointer"></span>
+                                    <span className={(name !== "Image" ? "pointer" : "null")}></span>
                                 </th>
                             );
                         })}
