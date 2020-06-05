@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/EmployeeList.css";
+import "./EmployeeList.css";
 
 function EmployeeList({ users }) {
     function formatDate(date) {

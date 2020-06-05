@@ -1,6 +1,6 @@
 import React from "react";
 import EmployeeList from "../EmployeeList";
-import "../../styles/EmployeeTable.css";
+import "./EmployeeTable.css";
 
 function EmployeeTable({ headings, users, handleSort }) {
     return (

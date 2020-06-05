@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import EmployeeTable from "../EmployeeTable";
 import SearchBar from "../SearchBar";
 import API from "../../utils/API";
-import "../../styles/TableBody.css";
+import "./TableBody.css";
 
 export default class TableBody extends Component {
     state = {
