@@ -2,7 +2,7 @@
 import React from "react";
 import "./EmployeeList.css";
 
-// users (prop from TableBody via employeeTable) is //  the array of employee data
+// users (prop from TableBody via EmployeeTable) is //  the array of employee data
 function EmployeeList({ users }) {
     // console.log('user1: ', users[0])
     // split the date field and assign variables for year, month and day to format DOB as formattedDate

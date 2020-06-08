@@ -4,6 +4,9 @@ import SearchBar from "../SearchBar";
 import API from "../../utils/API";
 import "./TableBody.css";
 
+// TableBody passes prop handleSearchChange to SearchBar (then to SearchBox)
+// and users, headings and handleSort to EmployeeTable
+// (user is then passed to EmployeeList)
 export default class TableBody extends Component {
     state = {
         users: [{}],

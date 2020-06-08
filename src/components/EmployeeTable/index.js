@@ -2,6 +2,8 @@ import React from "react";
 import EmployeeList from "../EmployeeList";
 import "./EmployeeTable.css";
 
+// props headings, users, handleSort are from TableBody
+// users is passed through to EmployeeList
 function EmployeeTable({ headings, users, handleSort }) {
     return (
         <div className="datatable fixHeader">
