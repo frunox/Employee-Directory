@@ -49,4 +49,3 @@ The list is also searchable:
 MIT open source license.
 
 ![](https://img.shields.io/badge/Project-Creator-brightgreen) jrcannon@msn.com
-![](https://avatars0.githubusercontent.com/u/60527588?v=4)
