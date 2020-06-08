@@ -5,6 +5,7 @@ import Banner from "./components/Banner";
 
 import "./App.css";
 
+// render Container, Banner, and Table
 function App() {
   return (
     <div className="App">

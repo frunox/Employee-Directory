@@ -1,7 +1,11 @@
+// Component to render that list of employees
 import React from "react";
 import "./EmployeeList.css";
 
+// users (prop from TableBody via employeeTable) is //  the array of employee data
 function EmployeeList({ users }) {
+    // console.log('user1: ', users[0])
+    // split the date field and assign variables for year, month and day to format DOB as formattedDate
     function formatDate(date) {
         const dateArray = date.split("-");
         const year = dateArray[0];
@@ -11,7 +15,8 @@ function EmployeeList({ users }) {
         const formattedDate = [month, day, year].join("-");
         return formattedDate;
     }
-
+    // render the list of employees.  Set a  unique key (login.uuid) from data as provided
+    // add 'mailto:' functionality to the emails 
     return (
         <tbody>
             {users[0] !== undefined && users[0].name !== undefined ? (
