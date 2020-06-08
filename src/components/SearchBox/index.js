@@ -1,6 +1,8 @@
 import React from "react";
 import "./SearchBox.css";
 
+// receives prop handleSearchChange (from TableBody via SearchBar)
+// renders the search input box
 function SearchBox({ handleSearchChange }) {
     return (
         <div className="searchbox">
